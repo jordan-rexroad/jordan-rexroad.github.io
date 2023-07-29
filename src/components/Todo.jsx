@@ -20,11 +20,26 @@ function Todo() {
         const removeArr = [...todos].filter((todo) => todo.id !== id);
         setTodos(removeArr);
     }
+    const completeTodo=(id)=> {
+    let updatedTodos=todos.map((todo)=> {
+        if(todo.id===id) {
+            todo.isCompleted = !todo.isCompleted;
+        }
+        return todo;
+    
+    });
+    setTodos(updatedTodos);
+};
+
   return (
     <div>
-        <h1 className='header'> Add your to do list here</h1>  
+        <h1 className="header"> Add your to do list here</h1>  
         <TodoForm onSubmit={addTodo}/>
-        <TodoList todos={todos} updateTodo={updateTodo} removeTodo={removeTodo}/>
+        <TodoList 
+         todos={todos}
+         updateTodo={updateTodo} 
+         removeTodo={removeTodo} 
+         completeTodo={completeTodo}/>
     </div>
   )
 }

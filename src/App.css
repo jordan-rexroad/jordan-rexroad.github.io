@@ -11,7 +11,95 @@
   padding-bottom: 32px;
 
 }
-.header {
+.header{
   margin: 32px 0;
   font-size: 24px;
 }
+
+.todo_form{
+  margin-top: 32px;
+}
+
+.input-add{
+  padding: 10px;
+  margin: 10px;
+  border-radius: 5px;
+  border: 2px solid darkorchid;
+  width: 320px;
+  background-color: transparent; 
+  color: black;
+}
+
+.input-edit{
+  padding:10px;
+  margin: 5px;
+  border-radius: 5px;
+  border: 2px solid darkorchid;
+  box-shadow: 10px 5px 5px lavender;
+  width: 320px;
+  background: transparent;
+  color: black;
+}
+
+.add-button,
+.edit-button{
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  outline: none;
+  background: linear-gradient(
+    90deg,
+    rgba(93,12,225,1)0%,
+    rgba(155,0,250,1)100%
+  );
+  color: white;
+  text-transform: capitalize;
+
+}
+
+.icons{
+  display: flex;
+  align-items: center;
+  font-size: 24px;
+  cursor: pointer;
+}
+
+.delete-icon{
+  margin-right: 5px;
+  color: red;
+
+}
+
+.edit-icon{
+  background-color: yellow;
+}
+
+.todo-container{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 4px auto;
+  color: white;
+  background: linear-gradient(
+    90deg,
+    rgba(144,10,211)0%,
+    rgba(235,230,228)100%
+  );
+  border: 2px solid rgba(235,230,228);
+  padding: 16px;
+  border-radius: 2px; 
+  width: 380px;
+  box-shadow: 2px 3px;
+}
+
+g
+.todo-complete{
+  text-decoration: line-through;
+  opacity: 0.4;
+  align-items: center;
+  margin: 4px auto;
+  padding: 16px;
+  width: 380px;
+}
+
