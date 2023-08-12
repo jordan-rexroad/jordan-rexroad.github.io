@@ -154,9 +154,10 @@ border-radius: 10% ;
   
 }
 
-  @media all and (max-width: 500px) {
+@media screen and (min-width: 768px) {
  .container {
-    width: 320px; }
+    width: 500px; 
+    height: 700px;}
 
   .input-add {
     width: 220px;
