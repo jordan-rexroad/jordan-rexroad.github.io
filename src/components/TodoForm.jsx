@@ -16,6 +16,7 @@ function TodoForm (props) {
                 text:input
             })
         }
+
         }
   return (
     <form className="todo_form">

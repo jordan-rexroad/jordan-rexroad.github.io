@@ -15,7 +15,7 @@ function Todo() {
         prev.map((item) => (item.id === todoId ? newValue : item))
         )
     }
-    
+
     const removeTodo=(id) => {
         const removeArr = [...todos].filter((todo) => todo.id !== id);
         setTodos(removeArr);
