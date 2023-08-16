@@ -15,6 +15,8 @@ function App() {
     case "/Contact":
         component = <Contact/>
         break
+      default:
+        component = <Todo/>
   }
   return (
     <>
@@ -23,6 +25,7 @@ function App() {
         <Routes>
           <Route path ="/Todo"element={<Todo/>} />
           <Route path ="/" element={<Todo/>} />
+          <Route path ="/react-todos" element={<Todo/>} />
           <Route path='/Contact' element={<Contact/>} />
           </Routes>
        </div> 
